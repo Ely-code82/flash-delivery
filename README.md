@@ -5,76 +5,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlashDelivery - Tabela de Entregas</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
+            font-family: "Poppins", sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+            text-align: center;
         }
 
         header {
             background: linear-gradient(135deg, #ffcc00, #ff8800);
-            padding: 25px;
-            text-align: center;
-            color: #fff;
-            font-size: 28px;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 35px 20px;
+            color: #000;
+            font-size: 34px;
+            font-weight: 700;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            letter-spacing: 1px;
         }
 
         .container {
             max-width: 900px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 4px 25px rgba(255, 136, 0, 0.15);
         }
 
         h2 {
-            text-align: center;
-            margin-top: 0;
             color: #ff8800;
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-weight: 600;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 35px;
+            border-radius: 12px;
+            overflow: hidden;
         }
 
         table th {
             background: #ff8800;
-            color: #fff;
-            padding: 10px;
+            color: #000;
+            padding: 14px;
             font-size: 18px;
+            font-weight: 700;
         }
 
         table td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
+            padding: 12px;
+            border-bottom: 1px solid #333;
         }
 
         tr:nth-child(even) {
-            background: #f9f9f9;
+            background: #111;
+        }
+
+        tr:nth-child(odd) {
+            background: #181818;
+        }
+
+        .link-area {
+            margin: 25px 0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #ff8800, #ff5500);
+            color: #000;
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 136, 0, 0.4);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
         }
 
         footer {
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             margin-top: 40px;
-            background: #333;
-            color: #fff;
-            font-size: 14px;
+            background: #111;
+            color: #ff8800;
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 1px;
         }
     </style>
 </head>
-<body>
-    <header>FlashDelivery - Tabela de Valores</header>
+<body id="top">
+    <header>FlashDelivery • Tabela de Preços de Entrega</header>
 
     <div class="container">
         <h2>Bairros</h2>
+
+        <div class="link-area">
+            <a href="#lotes" class="btn">Acessar Lotes e Residenciais</a>
+        </div>
+
         <table>
             <tr><th>Bairro</th><th>Valor</th></tr>
             <tr><td>Alto do Cruzeiro</td><td>6,00</td></tr>
@@ -104,7 +146,7 @@
             <tr><td>Manoel Teles</td><td>5,00</td></tr>
             <tr><td>Novo Horizonte</td><td>6,00</td></tr>
             <tr><td>Nova Esperança</td><td>6,00</td></tr>
-            <tr><td>Olho D'Gua Do C</td><td>6,00</td></tr>
+            <tr><td>Olho D'Água do C</td><td>6,00</td></tr>
             <tr><td>Ouro Preto</td><td>5,00</td></tr>
             <tr><td>Planalto</td><td>7,00</td></tr>
             <tr><td>Primavera</td><td>5,00</td></tr>
@@ -118,9 +160,14 @@
             <tr><td>Zélia Barbosa R.</td><td>6,00</td></tr>
         </table>
 
-        <h2>Lotes / Residenciais</h2>
+        <h2 id="lotes">Lotes e Residenciais</h2>
+
+        <div class="link-area">
+            <a href="#top" class="btn">Voltar ao Topo</a>
+        </div>
+
         <table>
-            <tr><th>Lote/Residencial</th><th>Valor</th></tr>
+            <tr><th>Residencial</th><th>Valor</th></tr>
             <tr><td>Aroeiras</td><td>9,00</td></tr>
             <tr><td>Agreste</td><td>12,00</td></tr>
             <tr><td>Alto do Morro</td><td>9,00</td></tr>
@@ -152,7 +199,7 @@
         </table>
     </div>
 
-    <footer>© 2025 FlashDelivery - Todos os direitos reservados</footer>
+    <footer>© 2025 FlashDelivery • Rápido • Confiável • Profissional</footer>
 </body>
 </html>
 
