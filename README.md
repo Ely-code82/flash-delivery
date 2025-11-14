@@ -63,6 +63,7 @@
             font-size: 26px;
             margin-bottom: 20px;
             font-weight: 600;
+            text-align: center;
         }
 
         table {
@@ -79,12 +80,28 @@
             padding: 14px;
             font-size: 18px;
             font-weight: 700;
+            text-align: center;
         }
 
         table td {
             padding: 12px;
             border-bottom: 1px solid #333;
             font-size: 16px;
+            text-align: center;
+        }
+
+        /* Nome do bairro/residencial */
+        td:first-child {
+            color: #00ff8a;
+            font-weight: 700;
+            text-shadow: 0 0 4px rgba(0,255,130,0.5);
+        }
+
+        /* Valor */
+        td:last-child {
+            color: #ffffff;
+            font-weight: 800;
+            text-shadow: 0 0 6px rgba(255,255,255,0.4);
         }
 
         tr:nth-child(even) {
@@ -93,16 +110,6 @@
 
         tr:nth-child(odd) {
             background: #181818;
-        }
-
-        td:first-child {
-            color: #00e676;
-            font-weight: 600;
-        }
-
-        td:last-child {
-            color: #fff;
-            font-weight: 700;
         }
 
         footer {
